@@ -29,6 +29,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-shadow: 3px 2px #525151d3;
 }
 
 .reset {
@@ -36,7 +37,7 @@ body {
   width: 100%;
   color: #000;
   background-color: #fff;
-  border: none;
+  /* border: none; */
   font-size: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -80,19 +81,20 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #404040;
+  background-color: #9e9d92;
   /* opacity: 0.85; */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
   border: 1px solid #000;
-  border-radius: 10%;
+  border-radius: 9%;
 }
 
 .item.boxOpen {
   transform: rotateY(0deg);
 }
 
-.boxOpen::after, .boxMatch::after {
+.boxOpen::after,
+.boxMatch::after {
   transform: rotateY(180deg);
 }
