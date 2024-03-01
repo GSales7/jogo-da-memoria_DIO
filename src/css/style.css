@@ -51,9 +51,9 @@ body {
 }
 
 .game {
-  border: 1px solid red;
-  width: 430px;
-  height: 430px;
+  /* border: 1px solid #000; */
+  width: 432px;
+  height: 432px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -63,6 +63,8 @@ body {
 
 .item {
   position: relative;
+  border: 1px solid #000;
+  border-radius: 10%;
   width: 100px;
   height: 100px;
   display: flex;
@@ -79,10 +81,12 @@ body {
   position: absolute;
   inset: 0;
   background-color: #404040;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
+  border: 1px solid #000;
+  border-radius: 10%;
 }
 
 .item.boxOpen {
